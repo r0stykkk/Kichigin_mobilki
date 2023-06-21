@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "4d0b253e-22bd-4b33-a6c6-b164ab2b5360",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27853090"
+	},
+	"item": [
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "new_acc",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/account?name=admin&secret=admin",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"account"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "admin"
+								},
+								{
+									"key": "secret",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "session",
+			"item": [
+				{
+					"name": "new_token",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/session?name=admin&secret=admin",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"session"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "admin"
+								},
+								{
+									"key": "secret",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_token",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/session?token=8 k a m a v 4 r y b",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"session"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "8 k a m a v 4 r y b"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "note",
+			"item": [
+				{
+					"name": "new_note",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/note?title=note2&token=6 s b 9 k 1 8 e k h&content=content2",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "note2"
+								},
+								{
+									"key": "token",
+									"value": "6 s b 9 k 1 8 e k h"
+								},
+								{
+									"key": "content",
+									"value": "content2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/note?token=6 s b 9 k 1 8 e k h",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "6 s b 9 k 1 8 e k h"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_note",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/note?id=2&token=6 s b 9 k 1 8 e k h",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "token",
+									"value": "6 s b 9 k 1 8 e k h"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/note?id=2&token=6 s b 9 k 1 8 e k h",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "token",
+									"value": "6 s b 9 k 1 8 e k h"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit_note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "rosty35.pythonanywhere.com/note?id=2&token=6 s b 9 k 1 8 e k h&title=new_title&content=new_content",
+							"host": [
+								"rosty35",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "token",
+									"value": "6 s b 9 k 1 8 e k h"
+								},
+								{
+									"key": "title",
+									"value": "new_title"
+								},
+								{
+									"key": "content",
+									"value": "new_content"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
